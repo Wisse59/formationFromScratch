@@ -14,13 +14,26 @@ h1 {
     color: rgb(232, 232, 232);
 }
 
+a {
+    color: rgb(95, 4, 170);
+    text-decoration: none;
+    font-size: 80%;
+}
+
+.main-header button {
+    padding: 15px 30px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
 button {
-    padding: 20px 40px;
+    padding: 10px 20px;
     color: rgb(232, 232, 232);
     background-color: transparent;
     border: 1px solid;
     text-transform: uppercase;
-    font-size: 1.3rem;
+    font-size: 0.9rem;
+    font-weight: bold;
     margin-bottom: 100px;
 }
 
@@ -52,14 +65,36 @@ nav ul {
 }
 
 nav ul li:hover {
-    color: blue;
+    color: rgb(95, 4, 170);;
+    .rectangle {
+        visibility: visible;
+    }
+}
+
+nav ul li:after {
+  width  : 40px;
+  height : 10px;
+  position: relative;
+  left: 30px;
+  background : green;
+}
+
+.rectangle {
+  clip-path: inset(0 30% 95% 0);
+  background: rgb(95, 4, 170);
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 0%;
+  visibility: hidden;
 }
 
 #language {
-    background-color: gray;
-    border-radius: 9px;
+    background-color: rgb(221, 221, 221);
+    height: 2rem;
+    width: 6rem;
+    border-radius: 35%;
 }
-
 .main-header {
     background-image: url("./assets/img/bg.jpg");
     background-size:cover;
@@ -109,20 +144,37 @@ nav ul li:hover {
 .news-part {
     background: rgb(250, 250, 250);
     padding: 85px;
-    padding-inline: 185px;
 }
 
 .header-news {
     display: grid;
     grid-auto-flow: column;
+    padding-left: 170px;
 }
 
 .left-part h2 {
     font-style: none;
+    position:relative;
+    left: 1rem;
+}
+
+.left-part {
+    display: grid;
+    align-content: start;
 }
 
 .left-part p {
     font-weight: bold;
+}
+
+.right-part {
+    position: relative;
+    right: 100px;
+    top: 60px;
+}
+
+.right-part button {
+    color: rgb(15, 15, 15);
 }
 
 .main-news-container {
@@ -139,8 +191,18 @@ nav ul li:hover {
     margin-inline: 20px;
 }
 
+.main-news {
+    font-weight: bold;
+    padding-inline: 140px;
+}
+
 .mn-pic img {
     box-shadow: 0px 0px 5px 0px;
+}
+
+.main-news-container p {
+    font-size: 85%;
+    line-height: 1.3;
 }
 
 .contact-list {
@@ -149,6 +211,39 @@ nav ul li:hover {
     grid-template-columns: 25% 25% 25% 25%;
     margin: 5rem;
     margin-inline: 17.5rem;
+    font-weight: bold;
+}
+
+.contact-list h5 {
+    font-size: 1rem;
+}
+
+.contact-list p {
+    font-size: 0.8rem;
+}
+
+.list:nth-child(1) {
+    display: grid;
+    align-content: center;
+}
+
+.list h6 {
+    line-height: 0;
+    font-size: 0.8rem;
+}
+
+.infos-p {
+    list-style-type: none;
+    display: grid;
+    position: relative;
+    right: 2.5rem;
+    line-height: 2;
+}
+
+.list p {
+    display: grid;
+    position: relative;
+    right: 1.3rem;
 }
 
 .contact-medias {
@@ -166,14 +261,17 @@ nav ul li:hover {
     margin: 0.5rem;
 }
 
-/*pas si utile :(
-.medias-text {
-    display: grid;
-    align-items: center;
-    align-content: center;
-    justify-items: center;
-    justify-content: center;
-}*/
+.medias-text h3 {
+    margin-left: 1.2rem;
+}
+
+.medias-text p {
+    font-weight: bold;
+}
+hr {
+    width: 60%;
+    opacity: 0.33;
+}
 
 footer {
     justify-content: center;
