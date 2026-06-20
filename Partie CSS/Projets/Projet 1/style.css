@@ -290,3 +290,111 @@ footer ul {
 footer ul li {
     margin: 1rem;
 }
+
+@media screen and (max-width: 575px) {
+    nav {
+        display: none;
+    }
+    .main-header {
+        text-align: center;
+    }
+    .main-header img {
+        width: 100%;
+    }
+    .icon-part-container {
+        grid-auto-flow: row;
+    }
+    .main-news-container {
+        grid-auto-flow: row;
+        position: relative;
+    }
+    .main-news-container div h4, p, a {
+        display: grid;
+        margin-inline: 0px;
+    }
+    
+    /*.main-news-container div {
+        justify-content:start;
+        align-items: start;
+        font-size: 0.9rem;
+        margin: 0;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-inline: 0;
+        line-height: 1.5;
+    }*/
+    .main-news {
+        padding-inline: 0;
+    }
+    .header-news {
+        padding-left: 0;
+        grid-auto-flow: row;
+    }
+    .news-part {
+        display: grid;
+    }
+    .right-part {
+        position:static;
+        display: grid;
+        justify-content: center;
+    }
+    .contact {
+        display: none;
+    }
+    footer img {
+        width: 100%;
+    }
+    footer ul li {
+        padding: 0;
+        margin: 0;
+    }
+    .header-text {
+        justify-content:start;
+        align-items: start;
+        font-size: 0.9rem;
+        margin: 0;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-inline: 0;
+        line-height: 1.5;
+    }
+}
+
+/*@media screen and (max-width: 800px) {
+    nav {
+        grid-template-columns: 33% 66%;
+    }
+    .header {
+        grid-template-columns: 100%;
+    }
+    .header-left h1 {
+        font-size: 3em;
+    }
+    .header-left h3 {
+        font-size: 1.1em;
+    }
+    .header-left p {
+        font-size: 0.9em;
+    }
+    .infos {
+        grid-auto-flow: row;
+        justify-items: center;
+    }
+    #modem {
+        width: 300px;
+        display: grid;
+        align-content: center;
+    }
+    .infos-right h3 {
+        font-size: 1.5em;
+        display: grid;
+        justify-items: center;
+    }
+    .img-container {
+        padding: 25px;
+    }
+}*/
