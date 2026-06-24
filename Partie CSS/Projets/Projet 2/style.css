@@ -1,0 +1,258 @@
+@font-face {
+    font-family: SourceSansProLight;
+    src: url("./assets/fonts/source-sans-pro-light.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: SourceSansProLight, Montserrat, sans-serif;
+}
+
+button {
+    border: 2px solid rgb(231, 231, 231);
+    background-color: transparent;
+    font-size: 0.8rem;
+    padding: 1rem 1.8rem;
+    margin-bottom: 2rem;
+    border-radius: 100px;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-weight: bold;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+button:hover, #envoi:hover {
+    color: rgb(231, 231, 231);
+}
+
+#envoi {
+    border: 2px solid rgb(231, 231, 231);
+    background-color: transparent;
+    font-size: 0.8rem;
+    padding: 1rem 1.8rem;
+    margin-top: 2rem;
+    border-radius: 100px;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-weight: bold;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 3.8rem;
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: normal;
+}
+
+p {
+    margin-top: 2rem;
+    margin-bottom: 1.7rem;
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+    color: rgb(73, 73, 73);
+}
+
+.run-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    height: 800px;
+}
+
+.run-container:after {
+  content: "";
+  height: 1px;
+  background: rgb(223, 223, 223);
+}
+
+.run-container:after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background: rgb(223, 223, 223);
+}
+
+.run-left {
+    margin: 1.3rem 3rem 0 3.8rem;
+}
+
+.run-right {
+    height: 800px;
+    background: url("./assets/img/banner.jpg") right/cover;
+}
+
+.magna-container {
+    display: grid;
+    grid-template-columns: 37% 63%;
+    align-items: center;
+}
+
+.magna-container:after {
+  content: "";
+  height: 1px;
+  width: 180%;
+  background: rgb(223, 223, 223);
+}
+
+.magna-left {
+    height: 450px;
+}
+
+.magna-left img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.magna-right {
+    margin: 1.3rem 3rem 0 3.8rem;
+}
+
+.tempus-container {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    align-items: center;
+}
+
+.tempus-container:after {
+  content: "";
+  height: 1px;
+  background: rgb(223, 223, 223);
+  position: relative;
+  bottom: 1px;
+}
+
+.tempus-right {
+    height: 450px;
+}
+
+.tempus-right img {
+    width: 100%;
+    height: 100%;
+}
+
+.tempus-left {
+    margin: 1.3rem 3rem 0 3.8rem;
+}
+
+.f {
+    margin-top: 4.2rem;
+    margin-bottom: 67px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.f h2 {
+    font-size: 2.4rem;
+    margin-bottom: 1.7rem;
+}
+
+.f p {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#champs {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+#champ1, #champ2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#champ1 label, #champ2 label {
+    margin-bottom: 0.6rem;
+    font-weight: bold;
+    color: rgb(73, 73, 73);
+}
+
+#champ1 input, #champ2 input {
+    width: 326px;
+    height: 44px;
+    margin: 0 5px 0;
+    border-radius: 5px;
+    border: 2px solid rgb(228, 228, 228);
+}
+
+textarea {
+    width: 661px;
+    height: 200px;
+    border-radius: 5px;
+    border: 2px solid rgb(228, 228, 228);
+}
+
+.f:after {
+  content: "";
+  width: 90%;
+  height: 1px;
+  background: rgb(223, 223, 223);
+  position: relative;
+  top: 65px;
+}
+
+footer {
+    display: grid;
+    margin: 145px 31% 100px;
+    grid-auto-flow: column;
+    justify-items: center;
+}
+
+.img-container {
+    border: 2px solid rgb(228, 228, 228);
+    border-radius: 50%;
+    padding: 15px
+}
+
+footer img {
+    display: grid;
+    width: 20px;
+}
+
+@media screen and (max-width: 676px) {
+  .tempus-container img, .magna-container img {
+    display: none;
+  }
+  footer img {
+    width: 11px;
+  }
+  .run-container {
+    grid-template-columns: none;
+    grid-auto-flow: row;
+  }
+  .run-right {
+    height: 400px;
+  }
+  .magna-container {
+    grid-template-columns: none;
+  }
+  .magna-left {
+    display: none;
+  }
+  .tempus-container {
+    grid-template-columns: none;
+  }
+  
+  .tempus-right {
+    display: none;
+  }
+  #champ1 input, #champ2 input {
+    width: 80%;
+    margin-inline: 50px;
+  }
+  textarea {
+    width: 80%;
+  }
+}
