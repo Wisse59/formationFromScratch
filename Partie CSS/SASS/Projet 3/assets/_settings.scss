@@ -1,0 +1,45 @@
+@font-face {
+    font-family: Inter-ExtraBold;
+    src: url("./fonts/Inter_18pt-ExtraBold.ttf");
+    font-family: MerriweatherLight;
+    src: url("./fonts/Merriweather_24pt_SemiCondensed-Light.ttf");
+}
+
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+body {
+    text-align: center;
+    background-image: url("./images/bg.jpg");
+    font-family: MerriweatherLight, Arial, sans-serif;
+}
+
+h1, h2, h3, nav ul li {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: Inter-ExtraBold, Arial, sans-serif;
+}
+h4, h5 {
+  font-family: MerriweatherLight, Arial, sans-serif;
+  font-weight: normal;
+  letter-spacing: 1.5px;
+  margin: auto auto 80px auto;
+}
+
+h2 {
+  font-size: 50px;
+  padding-inline: 180px;
+}
+
+h5 {
+  margin: auto auto 20px auto;
+}
+
+// mixins
+@mixin centerSection {
+    padding: 70px;
+}

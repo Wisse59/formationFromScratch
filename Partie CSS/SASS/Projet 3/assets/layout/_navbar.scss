@@ -1,0 +1,32 @@
+nav {
+    height: 65px;
+    font-weight: bold;
+    background-color: rgba(245, 245, 220, 0.25);
+    display: grid;
+    grid-template-columns: 50% 20% 30%;
+     ul li {
+        width: 200px;
+        font-size: 10px;
+        align-content: center;
+        align-items: center;
+        color: whitesmoke;
+        i {
+            font-size: 20px;
+        }
+    }
+    ul li:hover {
+        background-color: rgb(244, 244, 230);
+        color: rgb(18, 18, 18);
+    }
+}
+
+.navbar-left, .navbar-right {
+    display: flex;
+}
+
+.navbar-right {
+    justify-content: space-evenly;
+    li {
+        width: 50px;
+    }
+}
