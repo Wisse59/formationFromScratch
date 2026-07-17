@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>THE RESTO</title>
     <link rel="shortcut icon" href="./assets/img/ic-plate-big.png" />
+    <meta name="description"
+    content="Resto, le restautant tendance d'Angoulême, noté 5 étoiles dirigé par le grand chef Russel Stephens. Ouvert 7 jours et 7 et bio.">
     <link rel="stylesheet" href="./assets/styles/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
 </head>
 <body>
     <div id="bg1">
@@ -16,13 +18,13 @@
                     <li>Resto</li>
                 </div>
                 <div id="nav-right">
-                    <li>Home</li>
-                    <li>Reservations</li>
-                    <li>Menu</li>
-                    <li>Blog</li>
-                    <li>Pages</li>
-                    <li>Shop</li>
-                    <li>Contact</li>
+                    <li class="hiddenNav">Home</li>
+                    <li class="hiddenNav">Reservations</li>
+                    <li class="hiddenNav">Menu</li>
+                    <li class="hiddenNav">Blog</li>
+                    <li class="hiddenNav">Pages</li>
+                    <li class="hiddenNav">Shop</li>
+                    <li class="hiddenNav">Contact</li>
                     <li id="icons">
                         <i class="fab fa-facebook-f"></i>
                         <i class="fab fa-twitter"></i>
@@ -68,67 +70,83 @@
             <div id="menu-bottom">
                 <div class="plat">
                     <img src="./assets/img/dish-item-01.jpg" alt="Italian source mushroom">
-                    <div class="platsIngredients">
-                        <p class="menu-plat">Italian source mushroom</p>
-                        <p class="menu-ingrd">Mushroom / Garlic / Veggies</p>
+                    <div class="platEtPrix">
+                        <div class="platsIngredients">
+                            <p class="menu-plat">Italian source mushroom</p>
+                            <p class="menu-ingrd">Mushroom / Garlic / Veggies</p>
+                        </div>
+                        <p class="menu-prix">$12</p>
                     </div>
-                    <p class="menu-prix">$12</p>
                 </div>
                 <div class="plat">
                     <img src="./assets/img/dish-item-02.jpg" alt="Fried potatoes with garlic">
-                    <div class="platsIngredients">
-                        <p class="menu-plat">Fried potatoes with garlic</p>
-                        <p class="menu-ingrd">Potatoes / Olive Oil / Garlic</p>
+                    <div class="platEtPrix">
+                        <div class="platsIngredients">
+                            <p class="menu-plat">Fried potatoes with garlic</p>
+                            <p class="menu-ingrd">Potatoes / Olive Oil / Garlic</p>
+                        </div>
+                        <p class="menu-prix">$22</p>
                     </div>
-                    <p class="menu-prix">$22</p>
                 </div>
                 <div class="plat">
                     <img src="./assets/img/dish-item-03.jpg" alt="Tenu roast source">
-                    <div class="platsIngredients">
-                        <p class="menu-plat">Tenu roast source</p>
-                        <p class="menu-ingrd">Tuna / Potatoes / Rice</p>
+                    <div class="platEtPrix">
+                        <div class="platsIngredients">
+                            <p class="menu-plat">Tenu roast source</p>
+                            <p class="menu-ingrd">Tuna / Potatoes / Rice</p>
+                        </div>
+                        <p class="menu-prix">$15</p>
                     </div>
-                    <p class="menu-prix">$15</p>
                 </div>
                 <div class="plat">
-                    <img src="./assets/img/dish-item-04.jpg" alt="Roast pork">
-                    <div class="platsIngredients">
-                        <p class="menu-plat">Roast pork (4 sticks)</p>
-                        <p class="menu-ingrd">Pork / Veggies / Shoyu</p>
+                    <div class="platEtPrix">
+                        <img src="./assets/img/dish-item-04.jpg" alt="Roast pork">
+                        <div class="platsIngredients">
+                            <p class="menu-plat">Roast pork (4 sticks)</p>
+                            <p class="menu-ingrd">Pork / Veggies / Shoyu</p>
+                        </div>
+                        <p class="menu-prix">$18</p>
                     </div>
-                    <p class="menu-prix">$18</p>
                 </div>
                 <div class="plat">
                     <img src="./assets/img/dish-item-05.jpg" alt="Salted fried chicken">
-                    <div class="platsIngredients">
-                        <p class="menu-plat">Salted fried chicken</p>
-                        <p class="menu-ingrd">Chiken / Olive Oil / Salt</p>
+                    <div class="platEtPrix">
+                        <div class="platsIngredients">
+                            <p class="menu-plat">Salted fried chicken</p>
+                            <p class="menu-ingrd">Chiken / Olive Oil / Salt</p>
+                        </div>
+                        <p class="menu-prix">$20</p>
                     </div>
-                    <p class="menu-prix">$20</p>
                 </div>
                 <div class="plat">
                     <img src="./assets/img/dish-item-06.jpg" alt="Crab with Curry Sources">
-                    <div class="platsIngredients">
-                        <p class="menu-plat">Crab with Curry Sources</p>
-                        <p class="menu-ingrd">Crab / Potatoes / Rice</p>
+                    <div class="platEtPrix">
+                        <div class="platsIngredients">
+                            <p class="menu-plat">Crab with Curry Sources</p>
+                            <p class="menu-ingrd">Crab / Potatoes / Rice</p>
+                        </div>
+                        <p class="menu-prix">$14</p>
                     </div>
-                    <p class="menu-prix">$14</p>
                 </div>
                 <div class="plat">
                     <img src="./assets/img/dish-item-07.jpg" alt="Imported slamon steak">
-                    <div class="platsIngredients">
-                        <p class="menu-plat">Imported slamon steak</p>
-                        <p class="menu-ingrd">Salmon / Veggies / Oil</p>
+                    <div class="platEtPrix">
+                        <div class="platsIngredients">
+                            <p class="menu-plat">Imported slamon steak</p>
+                            <p class="menu-ingrd">Salmon / Veggies / Oil</p>
+                        </div>
+                        <p class="menu-prix">$16</p>
                     </div>
-                    <p class="menu-prix">$16</p>
                 </div>
                 <div class="plat">
                     <img src="./assets/img/dish-item-08.jpg" alt="Baked potato pizza">
-                    <div class="platsIngredients">
-                        <p class="menu-plat">Baked potato pizza</p>
-                        <p class="menu-ingrd">Potato / Bread / Cheese</p>
+                    <div class="platEtPrix">
+                        <div class="platsIngredients">
+                            <p class="menu-plat">Baked potato pizza</p>
+                            <p class="menu-ingrd">Potato / Bread / Cheese</p>
+                        </div>
+                        <p class="menu-prix">$25</p>
                     </div>
-                    <p class="menu-prix">$25</p>
                 </div>
             </div>
         </div>

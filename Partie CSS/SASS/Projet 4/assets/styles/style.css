@@ -49,10 +49,52 @@ nav ul li:hover i {
 nav ul li:hover i:hover {
   color: rgb(166, 114, 69);
 }
+@media screen and (max-width: 721px) {
+  nav ul li {
+    font-size: 3rem;
+  }
+}
 
 #icons i {
   padding-inline: 6px;
   font-size: 0.8rem;
+}
+@media screen and (max-width: 721px) {
+  #icons i {
+    font-size: 1rem;
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 1238px) {
+  .hiddenNav {
+    padding-inline: 2rem;
+  }
+}
+@media screen and (max-width: 1125px) {
+  .hiddenNav {
+    padding-inline: 1.5rem;
+  }
+}
+@media screen and (max-width: 1013px) {
+  .hiddenNav {
+    padding-inline: 1rem;
+  }
+}
+@media screen and (max-width: 901px) {
+  .hiddenNav {
+    padding-inline: 0.5rem;
+  }
+}
+@media screen and (max-width: 789px) {
+  .hiddenNav {
+    padding-inline: 0.2rem;
+  }
+}
+@media screen and (max-width: 721px) {
+  .hiddenNav {
+    display: none;
+  }
 }
 
 #nav-left {
@@ -109,21 +151,31 @@ header p {
   font-size: 0.8rem;
   letter-spacing: 0.33rem;
 }
-
-#titre {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+@media screen and (max-width: 635px) {
+  header p {
+    max-width: 300px;
+    word-wrap: break-word;
+    text-align: center;
+    font-size: 0.95rem;
+  }
+  header h1 {
+    line-height: 4.8rem;
+    font-size: 2.8rem;
+  }
 }
 
 #chef-cook {
   display: grid;
   grid-auto-flow: column;
   grid-template-columns: 50% 50%;
+}
+@media screen and (max-width: 837px) {
+  #chef-cook {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 300px;
+  }
 }
 
 .chef-left {
@@ -166,6 +218,30 @@ header p {
   margin: 1.8rem 1rem 1.8rem 1rem;
   font-family: Roboto-Light, Verdana, sans-serif;
 }
+@media screen and (max-width: 837px) {
+  .chef-left {
+    min-height: 633px;
+  }
+  .chef-left img {
+    width: 2.4rem;
+    margin: 9px auto 5px auto;
+  }
+  .chef-left p {
+    font-size: 1.3rem;
+  }
+  .chef-left h3 {
+    font-size: 1.5rem;
+    -webkit-margin-before: 3.3rem;
+            margin-block-start: 3.3rem;
+  }
+  .chef-left span {
+    font-size: 2.6rem;
+  }
+  .chef-left #bordure #russel img {
+    margin-top: 6px;
+    width: 90px;
+  }
+}
 
 #russel p {
   margin: 0;
@@ -176,9 +252,6 @@ header p {
   margin: auto auto 0.3rem auto;
 }
 
-/*p {
- border:1px dotted black;
-}*/
 #russel-txt1 {
   font-family: Poppins-Medium, Verdana, sans-serif;
 }
@@ -213,6 +286,11 @@ header p {
   margin: 3.8rem auto 1.8rem auto;
   font-weight: 200;
 }
+@media screen and (max-width: 835px) {
+  #menu h3 {
+    font-size: 2.7rem;
+  }
+}
 #menu ul {
   display: grid;
   grid-auto-flow: column;
@@ -245,6 +323,11 @@ header p {
 #menu ul li:hover {
   font-size: 1.2rem;
 }
+@media screen and (max-width: 835px) {
+  #menu ul li {
+    margin: 32px 18px;
+  }
+}
 
 #menu-top {
   display: grid;
@@ -272,7 +355,7 @@ header p {
 }
 #menu-bottom {
   background: rgb(238, 238, 238);
-  margin: auto 22.7rem;
+  margin: auto 23.8%;
   padding-bottom: 13px;
   padding-top: 18px;
   min-height: 81vh;
@@ -308,6 +391,25 @@ header p {
 #menu-bottom > div:nth-child(8) {
   grid-area: rec8;
 }
+@media screen and (max-width: 835px) {
+  #menu-bottom {
+    margin: auto 8%;
+    grid-template-columns: none;
+    grid-template-rows: none;
+    grid-template-areas: "rec1" "rec2" "rec3" "rec4" "rec5" "rec6" "rec7" "rec8";
+    padding-bottom: 13px;
+    padding-top: 18px;
+    min-height: 200vh;
+  }
+  #menu-bottom p {
+    font-size: 1.1rem;
+    max-width: 200px;
+    word-wrap: break-word;
+  }
+  #menu-bottom img {
+    width: 100px;
+  }
+}
 
 .plat {
   display: grid;
@@ -327,9 +429,12 @@ header p {
           transform: translate(20px, 11px);
 }
 
-.platsIngredients {
+.platEtPrix {
   display: grid;
-  grid-auto-flow: row;
+  grid-auto-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .menu-plat {
@@ -351,7 +456,6 @@ header p {
 
 .menu-prix {
   position: relative;
-  left: 31px;
   color: forestgreen;
   font-family: Roboto-Light, Verdana, sans-serif;
   font-size: 1.1rem;
@@ -362,6 +466,11 @@ header p {
   background: url("../img/bg-menu-01.jpg") bottom no-repeat;
   padding-bottom: 7.45rem;
   background-size: 103%;
+}
+@media screen and (max-width: 835px) {
+  #bg2 {
+    background-size: 315%;
+  }
 }
 
 #reservation {
@@ -389,6 +498,11 @@ header p {
 #reservation p {
   text-align: center;
 }
+@media screen and (max-width: 987px) {
+  #reservation {
+    padding-inline: 1rem;
+  }
+}
 
 #reserv-container {
   margin: auto 10rem;
@@ -396,6 +510,15 @@ header p {
   display: grid;
   grid-auto-flow: column;
   grid-template-columns: 30% 69%;
+}
+@media screen and (max-width: 987px) {
+  #reserv-container {
+    grid-auto-flow: row;
+    grid-template-columns: none;
+    margin: 0;
+    -webkit-padding-before: 1.5rem;
+            padding-block-start: 1.5rem;
+  }
 }
 
 #reserv-left {
@@ -409,6 +532,11 @@ header p {
 }
 #reserv-left img {
   width: 1.8rem;
+}
+@media screen and (max-width: 987px) {
+  #reserv-left {
+    min-height: 87.5vh;
+  }
 }
 
 #bordure2 {
@@ -453,6 +581,14 @@ header p {
 #reserv-right img {
   width: 25px;
 }
+@media screen and (max-width: 987px) {
+  #reserv-right {
+    min-height: 116vh;
+  }
+  #reserv-right img {
+    width: 32px;
+  }
+}
 
 .form-grid {
   color: rgb(192, 192, 192);
@@ -460,6 +596,7 @@ header p {
 }
 .form-grid input, .form-grid select {
   background-color: rgb(238, 238, 238);
+  color: rgb(39, 39, 39);
   border: none;
   outline: none;
   border-bottom: 1px solid rgb(192, 192, 192);
@@ -467,6 +604,16 @@ header p {
   padding-bottom: 10px;
   margin-inline: 5px;
   width: 158px;
+}
+@media screen and (max-width: 987px) {
+  .form-grid input, .form-grid select {
+    display: grid;
+    grid-auto-flow: row;
+    font-size: 1.1rem;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    width: 280px;
+  }
 }
 
 .button {
@@ -485,6 +632,15 @@ header p {
 }
 .button:hover {
   font-size: 1rem;
+}
+@media screen and (max-width: 987px) {
+  .button {
+    padding: 1rem 3.5rem;
+    font-size: 1.1rem;
+  }
+  .button:hover {
+    font-size: 1.25rem;
+  }
 }
 
 #events {
@@ -526,6 +682,11 @@ header p {
 }
 #events a:hover {
   font-size: 0.9rem;
+}
+@media screen and (max-width: 907px) {
+  #events {
+    display: none;
+  }
 }
 
 #events-container {
@@ -755,14 +916,27 @@ header p {
   -webkit-transform: translate(-2px, -30px);
           transform: translate(-2px, -30px);
 }
+@media screen and (max-width: 929px) {
+  #ceo-container {
+    height: 580px;
+    width: 95%;
+    -webkit-margin-before: 18rem;
+            margin-block-start: 18rem;
+  }
+}
 
 #bg3 {
   background: url("../img/gmap.jpg") center/cover no-repeat;
   height: 347px;
   display: grid;
   justify-items: center;
-  -ms-flex-line-pack: start;
-      align-content: start;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+@media screen and (max-width: 929px) {
+  #bg3 {
+    height: 450px;
+  }
 }
 
 #ceo-text1 {
@@ -778,15 +952,30 @@ header p {
   font-family: sans-serif;
   font-weight: bold;
 }
+@media screen and (max-width: 929px) {
+  #ceo-text1 {
+    font-size: 1.2rem;
+  }
+}
 
 #ceo-text2 {
   font-size: 1.5rem;
   margin-top: 1.2rem;
 }
+@media screen and (max-width: 929px) {
+  #ceo-text2 {
+    font-size: 1.8rem;
+  }
+}
 
 #ceo-text3 {
   color: rgb(177, 145, 122);
   margin-bottom: 2.9rem;
+}
+@media screen and (max-width: 929px) {
+  #ceo-text3 {
+    font-size: 1.25rem;
+  }
 }
 
 footer {
@@ -822,6 +1011,11 @@ footer {
   font-size: 0.9rem;
   line-height: 1.8rem;
 }
+@media screen and (max-width: 845px) {
+  #footer-left {
+    display: none;
+  }
+}
 
 #footer-right {
   background: rgb(32, 32, 30);
@@ -840,6 +1034,11 @@ footer {
   text-transform: uppercase;
   font-size: 0.85rem;
   font-weight: bold;
+}
+@media screen and (max-width: 845px) {
+  #footer-right {
+    width: 193.7%;
+  }
 }
 
 #title-newsletter {

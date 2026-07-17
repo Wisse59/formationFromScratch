@@ -1,0 +1,225 @@
+#events {
+  background: rgb(32, 32, 30);
+  font-family: Roboto-Light, Verdana, sans-serif;
+  text-align: center;
+  padding-block-start: 40px;
+  h2 {
+    color: whitesmoke;
+    font-family: Poppins-Medium, Verdana, sans-serif;
+    text-transform: uppercase;
+    display: grid;
+    line-height: 0.8;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    line-height: 1;
+  }
+  span {
+    color: rgb(166, 114, 69);
+    font-family: Allura-Regular, Verdana, sans-serif;
+    font-size: 2.5rem;
+    text-transform: none;
+    font-weight: lighter;
+    text-align: center;
+    letter-spacing: 0px;
+  }
+  img {
+    margin: 2.3rem auto 1.3rem auto;
+  }
+  i {
+    font-size: 0.8rem;
+  }
+  a {
+    cursor: pointer;
+    transition: 0.4s ease;
+    &:hover {
+      font-size: 0.9rem;
+    }
+  }
+  @media screen and (max-width: 907px) {
+    display: none;
+  }
+}
+
+#events-container {
+  display: grid;
+  justify-content: center;
+  grid-auto-flow: column;
+}
+
+#events-left p, #events-left a {
+  text-align: left;
+  margin-left: 19px;
+}
+
+#events-left a {
+  margin-bottom: 1.7rem;
+}
+
+#events-left .events-title {
+  margin-top: 0.5rem;
+  margin-left: 1.7rem;
+}
+
+#events-top {
+  min-height: 25.1vh;
+  display: grid;
+  grid-template-columns: 39% 61%;
+  padding: 0.6rem;
+  width: 580px;
+}
+
+#events-top-img {
+  background:url("../img/event-01.jpg") center/cover;
+  position: relative;
+  &:before {
+    position: absolute;
+    content: "08";
+    background: rgb(32, 32, 30);
+    color: whitesmoke;
+    width: 38%;
+    height: 25%;
+    transform: translate(-51%, 60%);
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 15px;
+    padding-top: 15px;
+  }
+  &:after {
+    position: absolute;
+    content: "July";
+    background: rgb(32, 32, 30);
+    color: whitesmoke;
+    width: 38%;
+    height: 22%;
+    transform: translate(-51%, 198%);
+    font-size: 16px;
+    margin-top: 15px;
+  }
+}
+
+#events-top-txt {
+  background-color: rgb(238, 238, 238);
+  display: grid;
+  align-content: space-evenly;
+}
+
+#events-bottom {
+  min-height: 25.1vh;
+  width: 580px;
+  display: grid;
+  grid-template-columns: 39% 61%;
+  padding: 0.6rem;
+}
+
+#events-bottom-img {
+  background:url("../img/event-02.jpg") center/cover;
+  position: relative;
+  &:before {
+    position: absolute;
+    content: "08";
+    background: rgb(32, 32, 30);
+    color: whitesmoke;
+    width: 38%;
+    height: 25%;
+    transform: translate(-51%, 60%);
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 15px;
+    padding-top: 15px;
+  }
+  &:after {
+    position: absolute;
+    content: "July";
+    background: rgb(32, 32, 30);
+    color: whitesmoke;
+    width: 38%;
+    height: 22%;
+    transform: translate(-51%, 198%);
+    font-size: 16px;
+    margin-top: 15px;
+  }
+}
+
+#events-bottom-txt {
+  background-color: rgb(238, 238, 238);
+  display: grid;
+  align-content: space-evenly;
+}
+
+#events-right-fond {
+  background:url("../img/event-03.jpg") center/cover;
+  min-height: 52.8vh;
+  margin: 0.6rem;
+  width: 395px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#events-right {
+  background-color: rgb(238, 238, 238);
+  width: 88%;
+  height: 88%;
+  display: grid;
+  align-content: center;
+  position: relative;
+  &:before {
+    position: absolute;
+    content: "08";
+    background: rgb(32, 32, 30);
+    color: whitesmoke;
+    width: 25%;
+    height: 12%;
+    transform: translateX(146%);
+    font-size: 28px;
+    font-weight: bold;
+    padding-top: 16px;
+  }
+  &:after {
+    position: absolute;
+    content: "July";
+    background: rgb(32, 32, 30);
+    color: whitesmoke;
+    width: 25%;
+    height: 12%;
+    transform: translate(146%, 109%);
+    font-size: 16px;
+  }
+}
+
+#events-right .events-title {
+  font-size: 1.3rem;
+  margin-inline: 3rem;
+  margin-bottom: 7px;
+  margin-top: 80px;
+}
+
+#events-right .events-coord {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+#events-right .events-buy {
+  margin-top: 70px;
+  margin-right: 10px;
+}
+
+.events-title {
+  color: rgb(53, 53, 53);
+  letter-spacing: 1px;
+  font-size: 1.3rem;
+}
+
+.events-coord {
+  color: rgb(182, 182, 182);
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+.events-buy {
+  color: rgb(41, 41, 41);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+}

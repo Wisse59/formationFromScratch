@@ -1,0 +1,124 @@
+#bg1 {
+    background: url("../img/bg-slider-06.jpg") fixed center/cover;
+}
+
+nav ul {
+  display: grid;
+  color: whitesmoke;
+  grid-auto-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li {
+  padding-top: 20px;
+  padding-inline: 2.5rem;
+  cursor: pointer;
+  animation: 0.4s ease;
+  &:hover {
+    color: rgb(166, 114, 69);
+    i {
+      color: whitesmoke;
+      &:hover {
+        color: rgb(166, 114, 69);
+      }
+    }
+  }
+  @media screen and (max-width: 721px) {
+    font-size: 3rem;
+  }
+}
+
+#icons i {
+  padding-inline: 6px;
+  font-size: 0.8rem;
+  @media screen and (max-width: 721px) {
+    font-size: 1rem;
+    margin-bottom: 25px;
+  }
+}
+
+.hiddenNav {
+  @media screen and (max-width: 1238px) {
+    padding-inline: 2rem;
+  }
+  @media screen and (max-width: 1125px) {
+    padding-inline: 1.5rem;
+  }
+  @media screen and (max-width: 1013px) {
+    padding-inline: 1rem;
+  }
+  @media screen and (max-width: 901px) {
+    padding-inline: 0.5rem;
+  }
+  @media screen and (max-width: 789px) {
+    padding-inline: 0.2rem;
+  }
+  @media screen and (max-width: 721px) {
+    display: none;
+  }
+}
+
+#nav-left {
+  font-family: Allura-Regular, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 230%;
+  padding-inline: 1.6rem;
+}
+
+#nav-right {
+  display: grid;
+  grid-auto-flow: column;
+  font-family: Roboto-Light, Verdana, sans-serif;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  padding-inline: 0.5rem;
+}
+
+header {
+  color: whitesmoke;
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  h1 {
+    font-family: Poppins-Medium, Verdana, sans-serif;
+    text-transform: uppercase;
+    text-align:center;
+    font-size: 3.2rem;
+    letter-spacing: 0.6rem;
+    display: grid;
+    line-height: 0.8;
+    margin-block-start: 3.17em;
+  }
+  span {
+    color: rgb(166, 114, 69);
+    font-family: Allura-Regular, Verdana, sans-serif;
+    font-size: 3rem;
+    text-transform: none;
+    letter-spacing: 0rem;
+    font-weight: 200;
+  }
+  img {
+    width: 1.6rem;
+    margin: 3rem auto 2.15rem;
+  }
+  p {
+    font-family: Roboto-Light, Verdana, sans-serif;
+    text-transform: uppercase;
+    margin: auto auto 17.55rem auto;
+    font-size: 0.8rem;
+    letter-spacing: 0.33rem;
+  }
+  @media screen and (max-width: 635px) {
+    p {
+      max-width: 300px;
+      word-wrap: break-word;
+      text-align: center;
+      font-size: 0.95rem;
+    }
+    h1 {
+      line-height: 4.8rem;
+      font-size: 2.8rem;
+    }
+  }
+}
