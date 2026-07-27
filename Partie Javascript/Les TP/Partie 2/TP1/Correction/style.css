@@ -7,7 +7,6 @@
   padding: 5px;
   font-family: "font-1", Arial;
   box-sizing: border-box;
-  cursor: none;
 }
 li {
   list-style: none;
@@ -17,6 +16,8 @@ a:visited {
   color: white;
   text-decoration: none;
   transition: 0.3s;
+  z-index: 1000;
+  position: relative;
 }
 a:hover {
   font-size: 1.3rem;
@@ -26,6 +27,30 @@ body {
   background: rgb(27, 27, 27);
   color: rgb(246, 246, 246);
   min-height: 100vh;
+  cursor: none;
+}
+.mouse {
+  position: absolute;
+  border-radius: 1500px;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: difference;
+}
+#cursor {
+  background: #2128bd;
+  width: 14px;
+  height: 14px;
+}
+#mouse1 {
+  height: 100px;
+  width: 100px;
+  background: white;
+  transition: 0.15s ease-out;
+}
+#mouse2 {
+  height: 200px;
+  width: 200px;
+  background: rgb(41, 41, 41);
+  transition: 0.25s ease-out;
 }
 nav {
   display: grid;
@@ -113,42 +138,6 @@ footer img {
   footer img {
     height: 35px;
   }
-}
-
-.bulle1 {
-  position: fixed;
-  width: 14px;
-  height: 14px;
-  background: rgb(255, 0, 0);
-  border-radius: 100%;
-  inset: 0; /*top right etc à 0*/
-  user-select: none; /*pour enlever la barre de texte*/
-  pointer-events: none; /*on ne peut cliquer dessus*/
-   /*pour s'assurer que les liens sont clikables*/
-}
-
-.bulle2 {
-  position: fixed;
-  width: 100px;
-  height: 100px;
-  background: rgba(226, 226, 227, 0.8);
-  border-radius: 100%;
-  inset: 0;
-  user-select: none;
-  pointer-events: none;
-  transition: transform 0.1s ease-out;
-}
-
-.bulle3 {
-  position: fixed;
-  width: 200px;
-  height: 200px;
-  background: rgba(37, 37, 37, 0.6);
-  border-radius: 100%;
-  inset: 0;
-  user-select: none;
-  pointer-events: none;
-  transition: transform 0.2s ease-out;
 }
 
 /* Mobile */
