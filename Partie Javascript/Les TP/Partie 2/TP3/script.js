@@ -7,7 +7,7 @@ let isButtonPressed = 0;
 const bouton = document.querySelector(".fa-times-circle");
 
 window.addEventListener ("click", (e) => {
-    if (e.target === isButtonPressed) {
+    if (e.target === bouton) {
         isButtonPressed = 1;
         popup.style.opacity = "0";
         popup.style.transform = "translateX(400px)";
