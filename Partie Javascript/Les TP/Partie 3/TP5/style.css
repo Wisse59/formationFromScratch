@@ -1,0 +1,19 @@
+#codeRGB-container {
+    margin: 20.2% 41.5%;
+    background: rgb(50, 50, 50);
+    box-shadow: -3px 2px 17px 0px rgb(50, 50, 50);
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    padding: 0.2rem 8.1rem;
+    border-radius: 10px;
+}
+
+#codeRGB {
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+.ajouterTexte:after {
+    content: attr(texteJS);
+}
