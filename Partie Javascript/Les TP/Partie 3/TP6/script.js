@@ -1,6 +1,7 @@
 const todolistContainer = document.getElementById("todolist-container");
 const ajouterTexte = document.getElementById('envoi');
 let textes = document.querySelectorAll(".texte");
+let isChecked = "*"
 //ce n'est pas un constante car on ajoutera des todo
 
 window.addEventListener('submit', (e) => {
@@ -28,5 +29,22 @@ window.addEventListener('click', (e) => {
     });
 });
 
+/*window.addEventListener('mouseover', (e) => {
+    let textes = document.querySelectorAll(".texte");
+    textes.forEach((unTexte) => {
+        if (e.target === unTexte) {
+            unTexte.setAttribute('mot', 'un mot');
+            unTexte.classList.add("texteVisible");
+        }
+    });
+});
+
+window.addEventListener('mouseout', (e) => {
+    let textes = document.querySelectorAll(".texte");
+    textes.forEach((unTexte) => {
+        unTexte.classList.remove("texteVisible");
+        unTexte.classList.add("texteNonVisible");
+    });
+});*/
 
 // texte.setAttribute('todo', todo); 
