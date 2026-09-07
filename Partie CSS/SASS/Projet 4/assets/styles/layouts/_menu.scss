@@ -40,6 +40,9 @@
     @media screen and (max-width: 835px) {
       margin: 32px 18px;
     }
+    @media screen and (max-width: 428px) {
+      margin: 16px 9px;
+  }
   }
 }
 
@@ -121,7 +124,7 @@
     "rec8";
     padding-bottom: 13px;
     padding-top: 18px;
-    min-height: 200vh;
+    min-height: 160vh;
     p {
       font-size: 1.1rem;
       max-width: 200px;
@@ -131,6 +134,9 @@
       width: 100px;
     }
   }
+  /*@media screen and (max-width: 1px) {
+    min-height: 280vh;
+  }*/
 }
 
 .plat {

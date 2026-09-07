@@ -49,7 +49,8 @@ footer {
     font-weight: bold;
   }
   @media screen and (max-width: 845px) {
-    width: 193.7%;
+    width: 200%;
+    justify-items: center;
   }
 }
 
@@ -82,3 +83,8 @@ footer {
   margin-inline: 21px;
   letter-spacing: 17px;
 }
+
+/*@media screen and (max-width: 845px) {
+    ..
+  }
+}*/

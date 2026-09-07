@@ -1,5 +1,5 @@
 #bg1 {
-    background: url("../img/bg-slider-06.jpg") fixed center/cover;
+  background: url("../img/bg-slider-06.jpg") fixed center/cover;
 }
 
 nav ul {
@@ -27,6 +27,16 @@ nav ul li {
   @media screen and (max-width: 721px) {
     font-size: 3rem;
   }
+  @media screen and (max-width: 370px) {
+    padding-inline: 0;
+  }
+}
+
+#icons {
+  @media screen and (max-width: 428px) {
+    display: grid;
+    grid-auto-flow: column;
+  }
 }
 
 #icons i {
@@ -35,6 +45,9 @@ nav ul li {
   @media screen and (max-width: 721px) {
     font-size: 1rem;
     margin-bottom: 25px;
+  }
+  @media screen and (max-width: 428px) {
+    margin-bottom: 0;
   }
 }
 
