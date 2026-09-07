@@ -84,3 +84,9 @@ input[type="range"] {
     max-width: 48%; /*2 cases pour la derniere ligne*/
   }
 }
+
+@media (max-width: 345px) {
+  .pays {
+    max-width: 100%; /*2 cases pour la derniere ligne*/
+  }
+}
