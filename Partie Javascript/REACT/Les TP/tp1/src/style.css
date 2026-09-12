@@ -1,0 +1,90 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    background-color: rgb(246, 246, 246);
+}
+
+h1 {
+    color: salmon;
+    display: flex;
+    justify-content: center;
+    margin: 1.1rem 0 0 0;
+}
+
+#recherche-container {
+    margin: 0.8rem 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+#recherche {
+    width: 252px;
+    border: 1px rgb(26, 26, 26) solid;
+    border-radius: 10px;
+    padding: 0.7rem;
+    caret-color: transparent; /*le trait lorsqu'on clique ailleurs*/
+}
+#recherche:focus {
+    caret-color: rgb(26, 26, 26);
+}
+
+.mesPlats {
+  display: flex;
+  flex-wrap: wrap;
+}
+.plat {
+  flex: 1 0 22%;
+  max-width: 24.34%; /*pour la derniere ligne*/
+  border: 2px salmon solid;
+  font-size: 0.9rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 2rem 1rem;
+}
+
+.image {
+  height: 265px;
+  width: 265px;
+  margin-top: 1.2rem;
+}
+.nom {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 1.2rem 0 0 0;
+}
+
+.pays {
+  margin: 0;
+  margin: 0.85rem 0 0 0;
+}
+.recette {
+  margin: 0;
+  margin: 0.8rem 2rem 1.65rem 2rem;
+}
+
+@media (max-width: 675.5px) {
+  .pays {
+    max-width: 31.8%; /*3 cases pour la derniere ligne*/
+  }
+}
+@media (max-width: 518.3px) {
+  .pays {
+    max-width: 48%; /*2 cases pour la derniere ligne*/
+  }
+}
+
+@media (max-width: 345px) {
+  .pays {
+    max-width: 100%; /*2 cases pour la derniere ligne*/
+  }
+}
