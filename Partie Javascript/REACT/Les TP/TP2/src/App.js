@@ -9,9 +9,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Accueil />} />
         <Route path="/coupdecoeur" element={<CoupCoeur />} />
+        <Route path="*" element={<Accueil />} />
       </Routes>
     </BrowserRouter>
   );
-}
+};
 
 export default App;
