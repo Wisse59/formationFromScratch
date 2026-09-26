@@ -18,6 +18,11 @@ ul li {
     color: white;
     list-style-type: none;
     margin: 0.5rem 0 0 1rem;
+    margin-right: 1rem;
+}
+
+.genre {
+    margin: 0rem;
 }
 
 p {
@@ -31,13 +36,21 @@ p {
 
 #titre {
     position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     color: rgb(193, 224, 236);
+    text-shadow: 1px 2px 2px rgb(8, 172, 236);
     font-family: 'Comic sans MS';
     font-weight: bold;
     display: flex;
     font-size: 2rem;
-    width: 75%;
     justify-content: center;
+}
+
+.nav-active {
+    background-color: rgb(50, 107, 231);
+    border-radius: 13px;
+    padding: 0 0 0.4rem 0;
 }
 
 #formulaire {
@@ -48,10 +61,13 @@ p {
 }
 
 input {
-    width: 11%;
-    padding: 0.2rem;
+    width: 14rem;
+    height: 2.38rem;
     text-align: center;
     border-top-left-radius: 4px;border-top-right-radius: 4px;
+}
+input:focus{
+    outline: none;
 }
 
 #topFlop {
@@ -60,20 +76,36 @@ input {
     flex-direction: row;
     justify-content: center;
 }
+#topFlop button {
+    width: 7rem;
+    height: 1.4rem;
+    font-size: 0.8rem;
+    transition: 0.4s ease;
+}
+#topFlop button:hover {
+    background-color: rgb(28, 58, 231);
+}
+#topFlop button:active {
+    width: 7.1rem;
+    height: 1.5rem;
+}
 
 button {
     color: whitesmoke;
-    background-color:rgb(75, 75, 246);
+    background-color: rgb(50, 107, 231);
     width: 5.5%;
     border: none;
 }
+
 button[type="submit"] {
     width: 11%;
     text-align: center;
     font-size: 0.9rem;
-    padding: 0.2rem;
+    width: 14rem;
+    margin-left: 0.05rem;
+    height: 2.38rem;
     color: whitesmoke;
-    background-color: rgb(75, 75, 246);
+    background-color: rgb(50, 107, 231);
     border-bottom-left-radius: 4px;border-bottom-right-radius: 4px;
 }
 
@@ -85,4 +117,101 @@ button[type="submit"] {
 #flop {
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
+}
+
+#films, #filmsCDC {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-block-start: 2rem;
+}
+#filmsCDC {
+    margin-block-start: 1rem;
+}
+#titreCDC {
+    display: flex;
+    justify-content: center;
+    margin-block-start: 5rem;
+    font-size: 1.2rem;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 20%;
+  justify-items: start;
+  min-width: 180px;
+  max-width: 280px;
+  background-color: rgb(15, 15, 30);
+  margin: 5px;
+  padding: 10px;
+  border-radius: 25px;
+  height: 40.4rem;
+}
+
+.img-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.imgFilm {
+    display: flex;
+    height: 260px;
+    border-radius: 25px;
+    margin-block-start: 1rem;
+}
+.titreFilm {
+    margin-top: 0.5rem;
+}
+.dateFilm {
+    margin: 0.4rem 0;
+    font-size: 0.9rem;
+    color: rgb(98, 98, 98);
+}
+.description {
+    font-size: 0.8rem;
+    color: rgb(98, 98, 98);
+    margin-top: 0.4rem;
+    line-height: 1.3rem;
+    height: 8.1rem;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,1), rgba(0,0,0,1), rgba(0,0,0,0));
+}
+.fa-star {
+    color: rgb(247, 247, 158);
+}
+
+.coupCoeur-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: auto;
+}
+.coupCoeur {
+    width: 70%;
+    transition: 0.4s ease;
+    border-radius: 10px;
+    height: 3.5rem;
+}
+.coupCoeur:hover {
+    background-color: rgb(28, 58, 231);
+}
+.coupCoeur:active {
+    width: 72%;
+    height: 3.7rem;
+}
+
+.genres {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin: 0.4rem 0;
+}
+.genre-container {
+    background-color: rgb(32, 32, 63);
+    border-radius: 15px;
+    padding: 5px 10px;
+}
+.genre {
+    font-size: 0.8rem;
 }
