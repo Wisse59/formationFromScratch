@@ -45,6 +45,17 @@ p {
     display: flex;
     font-size: 2rem;
     justify-content: center;
+    @media screen and (max-width: 676px) {
+        margin: 1rem 0 0 0;
+    }
+    @media screen and (max-width: 410px) {
+        left: 40%;
+        transform: translateX(-30%);
+    }
+    @media screen and (max-width: 341px) {
+        left: 30%;
+        transform: translateX(-20%);
+    }
 }
 
 .nav-active {
